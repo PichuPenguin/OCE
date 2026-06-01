@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>3DS Port</title>
+<style>
+body { 
+	font-family: times_new_roman; 
+    margin: 12px;
+    font-size: 23px;
+}
+a { text-decoration: none;
+	color: white;
+}
+.passage { max-width: 800px; }
+.story-text {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 20px;
+}
+.choice { 
+	color: #4169e1;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+a:hover {
+    color: #00bfff;
+}
+.screen {
+    display: none;
+}
+
+.screen.active {
+    display: block;
+}
+#meme-ending .choice {
+	position: absolute;
+	left: 50%;
+    justify-content: center;
+	text-decoration: none;
+	color: white;
+}
+#meme-ending .choice:nth-child(1) {
+  transform: translate(-40%, -60%) rotate(-10deg);
+  top: 10%;
+}
+
+#meme-ending .choice:nth-child(2) {
+  transform: translate(-20%, -30%) rotate(5deg);
+  top: 15%;
+}
+
+#meme-ending .choice:nth-child(3) {
+  transform: translate(-20%, -50%) rotate(145deg);
+  top: 8%;
+}
+
+#meme-ending .choice:nth-child(4) {
+  transform: translate(-50%, -50%) rotate(30deg);
+  top: 20%;
+}
+
+#meme-ending .choice:nth-child(5) {
+  transform: translate(-50%, -50%) rotate(156deg);
+  top 12%
+}
+footer {
+	font-size: 14px;
+    margin-top: 100px;
+</style>
+<script>
+function goToPage(pageId) {
+    document.querySelectorAll('.screen').forEach(p => {
+        p.classList.remove('active');
+    });
+
+    document.getElementById(pageId).classList.add('active');
+}
+</script>
+</head>
+<style>
+body {
+    background-color: black;
+    color: white;
+}
+.
+h1 {
+	
+</style>
+
+<div class="screen active" id="origins">
+	You are a college student, recently starting out at a college not too dissimilar to here... <b><a href="#" onclick="goToPage('one')">One</a></b> could argue it another timeline, a future snippet, or simply fiction based upon a known reality. It matters not.
+
+Clubs and organizations are a great way to get engaged on campus, how will you?<br>
+<br>
+	<a class="choice" href="#" onclick="goToPage('law-and-business')">Law and Business</a>
+	<a class="choice" href="#" onclick="goToPage('arcade-projects')">Arcade Projects</a>
+	<a class="choice" href="#" onclick="goToPage('solarpunk-society')">Solarpunk Society</a>
+	<a class="choice" href="#" onclick="goToPage('archery-club')">Archery Club</a>
+</div >
+<div id="law-and-business" class="screen">
+  <p>You've decided to visit the Law and Business collective! They're the biggest club on campus, and they help a lot of students become future lawmakers who help keep the college running.<br>
+<br>
+The college is 70% federally funded, so it heavily relies on lawmakers continuing to see the value in the college.<br>
+<br>
+The club is most beneficial to any who seek to pursue a career in running a business or as a lawmaker. Is this a club where you think you would benefit?<br>
+<br>
+	<a class="choice" href="#" onclick="goToPage('law-and-business')">Yep! Laws and Businesses are my jam!</a>
+	<a class="choice" href="#" onclick="goToPage('law-and-business')">I'm not so certain... Let's reconsider the options</a>
+  
+  </p>
+
+</div>
+<div id="one" class="screen">
+	<a class="choice" href="#" onclick="goToPage('two')">two</a>
+</div>
+<div id="two" class="screen">
+	<a class="choice" href="#" onclick="goToPage('three')">three</a>
+</div>
+<div id="three" class="screen">
+	<a class="choice" href="#" onclick="goToPage('four')">four</a>
+</div>
+<div id="four" class="screen">
+	<a class="choice" href="#" onclick="goToPage('five')">five</a>
+</div>
+<div id="five" class="screen">
+	<a class="choice" href="#" onclick="goToPage('six')">six</a>
+</div>
+<div id="six" class="screen">
+	<a class="choice" href="#" onclick="goToPage('meme-ending')">67</a>
+</div>
+<div id="meme-ending" class="screen">
+	<a class="choice" href="#" onclick="goToPage('origins')">You don't get a special ending</a>
+	<a class="choice" href="#" onclick="goToPage('origins')">You don't get a special ending</a>
+	<a class="choice" href="#" onclick="goToPage('origins')">You don't get a special ending</a>
+	<a class="choice" href="#" onclick="goToPage('origins')">You don't get a special ending</a>
+	<a class="choice" href="#" onclick="goToPage('origins')">You don't get a special ending</a>
+</div>
+<div id="arcade-projects" class="screen">
+  <p>You've decided to visit an Arcade Projects meeting! They're currently talking about the <b><a href="#" onclick="goToPage('manual')">manual</a></b> they made about campus issues, you've seen the <b><a href="#" onclick="goToPage('manual')">manual</a></b> around before, but haven't yet read it...<br>
+<br>
+	<a class="choice" href="#" onclick="goToPage('law-and-business')">Good a place as any to get engaged right?
+</a>
+	<a class="choice" href="#" onclick="goToPage('law-and-business')">Let's check out something else</a>
+  
+  </p>
+
+</div>
+<div id="solarpunk-society" class="screen">
+  <p>You've decided to visit the Solarpunk Society!<br>
+	why did you pick this...<br>
+    this is missing the whole point of it...<br>
+    <br>
+	<a class="choice" href="#" onclick="goToPage('law-and-business')">what is the point?</a>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <i><a class="choice" href="#" onclick="goToPage('law-and-business')">...what about solarpunk?</a></i>
+  </p>
+</div>
+<div id="archery-club" class="screen">
+  <p>You've decided to visit Archery Club! They're currently deciding where they want to have their meet ups to loose arrows, but they're in a bit of a stalemate between the Shotput Area and the Racketball Courts.<br>
+<br>
+Shotput Area:<br>
+Pros: Long range capability, Closer to parking lot (more can attend)<br>
+<br>
+Cons: Outside (rainy city), Farther from housing (will take a lot longer to get there)<br>
+<br>
+Racketball Courts:<br>
+Pros: Inside, Close to housing (great for you)<br>
+<br>
+Cons: Short range only, Farther from parking (less can attend)<br>
+<br>
+Where do you think would be a good place to meet?
+	<a class="choice" href="#" onclick="goToPage('law-and-business')">Shotput Area</a>
+	<a class="choice" href="#" onclick="goToPage('law-and-business')">Racketball Courts</a>
+  
+  </p>
+</div>
+<footer>
+	<div>
+		<br>
+		really shitty 3ds port <span style="color: pink;">&lt;3</span>
+	</div>
+</footer>
